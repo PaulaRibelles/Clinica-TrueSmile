@@ -1,10 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "clinica-truesmile",
-    "host": "127.0.0.1",
-    "port": 3306,
+    "password": "w7qSHAHgl6g7ZLzgInse",
+    "database": "railway",
+    "host": "containers-us-west-158.railway.app",
+    "port": 7011,
     "dialect": "mysql"
   },
   "test": {
