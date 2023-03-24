@@ -12,8 +12,8 @@ app.use(router);
 const db = require("./db/db.js");
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-console.log(`Server running in port ${PORT}`);
+// app.listen(PORT, () => {
+// console.log(`Server running in port ${PORT}`);
     
 // db.authenticate()
 // .then(() => {
@@ -27,4 +27,3 @@ db.then(() => {
     app.listen(PORT, () => console.log(`Application is listening at port ${PORT}`))
     })
     .catch((err) => console.log(err.message))
-})
