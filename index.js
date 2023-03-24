@@ -1,26 +1,30 @@
 const express = require('express');
-const app = express();
-const db = require("./db/db");
 const cors = require('cors')
+const app = express();
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
-const router = require('./router');
-
 app.use(cors())
-
 app.use(express.json());
+
+const router = require('./router');
 app.use(router);
 
+const db = require("./db/db.js");
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`Server running in port ${PORT}`);
+console.log(`Server running in port ${PORT}`);
     
-    db.authenticate()
-    .then(() => {
-        console.log("Connected to database");
+// db.authenticate()
+// .then(() => {
+//     console.log("Connected to database");
+// })
+// .catch((error) => {
+//     console.log("Error: " + error);
+// });
+
+db.then(() => {
+    app.listen(PORT, () => console.log(`Application is listening at port ${PORT}`))
     })
-    .catch((error) => {
-        console.log("Error: " + error);
-    });
+    .catch((err) => console.log(err.message))
 })
