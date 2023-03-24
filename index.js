@@ -1,10 +1,13 @@
 const express = require('express');
 const app = express();
 const db = require("./db/db");
+const cors = require('cors')
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 const router = require('./router');
+
+app.use(cors())
 
 app.use(express.json());
 app.use(router);
