@@ -32,13 +32,13 @@ Los doctores tendrán acceso a ver los pacientes registrados así como a las cit
 ## Stack :paperclip:
 Tecnologías utilizadas:
 <div>
-<a href="https://sequelize.org//">
+<a href="https://sequelize.org">
     <img src= "./img/sequelize-logo.png" width="60"/>
 </a>
-<a href="https://www.expressjs.com/">
+<a href="https://www.expressjs.com">
     <img src= "./img/express-js.png" width="60"/>
 </a>
-<a href="https://nodejs.org/es/">
+<a href="https://nodejs.org/es">
     <img src= "./img/nodejs.png" width="60"/>
 </a>
 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
